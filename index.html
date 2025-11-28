@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meliá Hotels & Resorts | Đặt phòng trực tuyến</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">MELIÁ <span class="logo-sub">HOTELS & RESORTS</span></div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Khách sạn</a></li>
+                <li><a href="#">Ưu đãi</a></li>
+                <li><a href="#">Hội viên</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Tận hưởng kỳ nghỉ trong mơ</h1>
+            <p>Khám phá vẻ đẹp Việt Nam cùng dịch vụ đẳng cấp quốc tế.</p>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <form id="booking-form" class="search-box">
+                <div class="input-group">
+                    <label><i class="fas fa-map-marker-alt"></i> Điểm đến</label>
+                    <input type="text" id="destination" placeholder="Bạn muốn đi đâu? (VD: Hà Nội)">
+                </div>
+                
+                <div class="input-group">
+                    <label><i class="fas fa-calendar-alt"></i> Ngày đi</label>
+                    <input type="date" id="check-in">
+                </div>
+
+                <div class="input-group">
+                    <label><i class="fas fa-user-friends"></i> Khách</label>
+                    <input type="number" value="2" min="1">
+                </div>
+
+                <button type="submit" id="search-button">TÌM KIẾM</button>
+            </form>
+        </div>
+    </section>
+
+    <main class="container result-container">
+        <h2 id="result-title">Khách sạn nổi bật</h2>
+        <div id="results" class="hotel-grid">
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Melia Hotels International. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
